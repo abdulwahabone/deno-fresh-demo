@@ -1,9 +1,9 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import GithubIcon from "./icons/githubIcon.tsx";
-import TwitterIcon from "./icons/twitterIcon.tsx";
-import LinkedinIcon from "./icons/linkedinIcon.tsx";
+import GithubIcon from "./githubIcon.tsx";
+import TwitterIcon from "./twitterIcon.tsx";
+import LinkedinIcon from "./linkedinIcon.tsx";
 
 export enum IconType {
   github = "github",

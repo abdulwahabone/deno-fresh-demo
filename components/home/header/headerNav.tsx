@@ -3,11 +3,11 @@ import { h } from "preact";
 import { tw } from "@twind";
 import { asset } from "$fresh/runtime.ts";
 import NavLinks from "./navLinks.tsx";
-import IconButton, { IconType } from "./iconButton.tsx";
+import IconButton, { IconType } from "../../icons/iconButton.tsx";
 
 export default function HeaderNav() {
   return (
-    <header class={tw`bg-black w-full`}>
+    <header class={tw`bg-black w-full max-h-[120px]`}>
       <div
         class={tw
           `mx-auto flex text-white justify-between items-center font-sans py-6 max-w-[900px]`}
