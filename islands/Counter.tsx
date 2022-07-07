@@ -11,7 +11,7 @@ interface CounterProps {
 export default function Counter(props: CounterProps) {
   const [count, setCount] = useState(props.start);
   const btn = tw
-    `mx-[50px] w-[75px] h-[75px] text-white font-sans font-bold text-6xl leading-[75px] bg-black rounded-full hover:bg-pink-500`;
+    `md:mx-[50px] w-[75px] h-[75px] text-white font-sans font-bold text-6xl leading-[75px] bg-black rounded-full hover:bg-pink-500`;
   return (
     <div class={tw`flex justify-center mx-auto items-center w-full py-[100px]`}>
       <button

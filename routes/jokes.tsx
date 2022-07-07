@@ -23,9 +23,8 @@ export const handler: Handlers<Joke | null> = {
   },
 };
 
-const h1 = apply
-  `font-sans font-bold mt-[50px] text-white max-w-[875px] tracking-tight
-  lg:text-[92px] text-6xl leading-[1.1] text-center`;
+const h1 = apply`font-sans font-bold mt-[50px] text-white max-w-[875px] tracking-tight
+  md:text-6xl lg:text-[92px] text-4xl leading-[1.5] md:leading-[1.1] text-center mx-5`;
 
 export default function Jokes({ data }: PageProps<Joke | null>) {
   return (
@@ -43,7 +42,7 @@ export default function Jokes({ data }: PageProps<Joke | null>) {
               <span class={tw`text-pink-500`}>&nbsp;Jokes</span>
             </h1>
           </div>
-          <p class={tw`my-[100px] block text-center text-white font-sans font-light text-[50px] leading-[60px] text-xl whitespace-pre-wrap tracking-wide border-2 border-white rounded-2xl p-[20px]`}>
+          <p class={tw`mx-5 md:mx-auto text-2xl md:text-[50px] md:leading-[60px] mt-[50px] md:mt-[100px]  mb-[100px] block text-center text-white font-sans font-light whitespace-pre-wrap tracking-wide border-2 border-white rounded-2xl p-[20px]`}>
             {data?.value}
           </p>
         </DarkSection>

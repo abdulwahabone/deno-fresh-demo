@@ -7,10 +7,10 @@ import IconButton, { IconType } from "../../icons/iconButton.tsx";
 
 export default function HeaderNav() {
   return (
-    <header class={tw`bg-black w-full max-h-[130px]`}>
+    <header class={tw`bg-black w-full md:max-h-[130px]`}>
       <div
         class={tw
-          `mx-auto flex text-white justify-between items-center font-sans py-6 max-w-[900px]`}
+          `mx-auto flex md:flex-row flex-col text-white justify-between items-center font-sans py-6 max-w-[900px]`}
       >
         <a href="/">
           <img
@@ -25,7 +25,7 @@ export default function HeaderNav() {
           <NavLinks href="/jokes">Jokes</NavLinks>
           <NavLinks href="/javascript">Javascript</NavLinks>
         </nav>
-        <div class={tw`-mt-4 flex`}>
+        <div class={tw`mt-4 md:-mt-4 flex`}>
           <IconButton
             iconType={IconType.github}
             href="https://github.com/abdulwahabone"

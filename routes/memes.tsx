@@ -23,9 +23,8 @@ export const handler: Handlers<Meme | null> = {
   },
 };
 
-const h1 = apply
-  `font-sans font-bold mt-[50px] text-white max-w-[875px] tracking-tight
-  lg:text-[92px] text-6xl leading-[1.1] text-center`;
+const h1 = apply`font-sans font-bold mt-[50px] text-white max-w-[875px] tracking-tight
+  md:text-6xl lg:text-[92px] text-4xl leading-[1.5] md:leading-[1.1] text-center mx-5`;
 
 export default function Memes({ data }: PageProps<Meme | null>) {
   return (
@@ -44,7 +43,7 @@ export default function Memes({ data }: PageProps<Meme | null>) {
         </div>
         <p
           class={tw
-            `mt-[50px] mb-[20px] block text-center text-white font-sans font-light text-[50px] leading-[60px] text-xl whitespace-pre-wrap tracking-wide`}
+            `mx-[20px] md:mx-auto mt-[50px] mb-[30px] md:leading-[60px] text-[20px] md:text-[50px] block text-center text-white font-sans font-light whitespace-pre-wrap tracking-wide`}
         >
           {data?.title}
         </p>

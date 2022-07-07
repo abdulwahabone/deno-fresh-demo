@@ -6,9 +6,8 @@ import HeaderNav from "../components/home/header/headerNav.tsx";
 import Memoji from "../components/home/header/memoji.tsx";
 import Counter from "../islands/Counter.tsx"
 
-const h1 = apply
-  `font-sans font-bold mt-[50px] text-white max-w-[875px] tracking-tight
-  lg:text-[92px] text-6xl leading-[1.1] text-center`;
+const h1 = apply`font-sans font-bold mt-[50px] text-white max-w-[875px] tracking-tight
+  md:text-6xl lg:text-[92px] text-4xl leading-[1.5] md:leading-[1.1] text-center mx-5`;
 
 export default function Javascript() {
   return (
