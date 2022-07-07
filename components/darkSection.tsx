@@ -9,8 +9,8 @@ interface DarkSection {
 
 export default function DarkSection(props: DarkSection) {
   return (
-    <section class={tw`bg-black p-20 w-full`}>
-      <div class={tw`mx-auto w-[900px]`}>
+    <section class={tw`bg-black`}>
+      <div class={tw`mx-auto py-6 max-w-[900px]`}>
         {props.children}
       </div>
     </section>

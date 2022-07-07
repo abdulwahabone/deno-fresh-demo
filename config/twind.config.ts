@@ -8,11 +8,13 @@ export const config: Configuration = {
   theme: {
     extend: {
       colors: {
-        primary: "#ea3ba7",
+        pink: {
+          500: "#ea3ba7",
+        },
       },
     },
     fontFamily: {
-      title: ["Spline Sans", "sans-serif"],
+      sans: ["Spline Sans", "sans-serif"],
     },
   },
   preflight: {
