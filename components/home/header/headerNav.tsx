@@ -20,8 +20,8 @@ export default function HeaderNav() {
           />
         </a>
         <nav class={tw`flex`}>
-          <NavLinks href="/about">About</NavLinks>
           <NavLinks href="/projects">Projects</NavLinks>
+          <NavLinks href="/memes">Memes</NavLinks>
           <NavLinks href="/jokes">Jokes</NavLinks>
           <NavLinks href="/javascript">Javascript</NavLinks>
         </nav>

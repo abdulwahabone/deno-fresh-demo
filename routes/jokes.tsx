@@ -15,7 +15,6 @@ export interface Joke {
 export const handler: Handlers<Joke | null> = {
   async GET(_, ctx) {
     const resp = await fetch(url);
-    console.log(resp);
     if (resp.status === 200) {
       const jokeData: Joke = await resp.json();
       return ctx.render(jokeData);
