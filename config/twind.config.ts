@@ -13,6 +13,7 @@ export const config: Configuration = {
         },
       },
     },
+
     fontFamily: {
       sans: ["Spline Sans", "sans-serif"],
     },

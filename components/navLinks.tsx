@@ -10,7 +10,7 @@ export default function navLinks(props: NavLinks) {
   return (
     <nav
       class={tw
-        `mx-2 cursor-pointer pb-2 leading-3 border-b-2 border-black hover:border-pink-500`}
+        `mx-2 cursor-pointer pb-2 leading-4 border-b-2 border-black hover:border-pink-500`}
     >
       {props.children}
     </nav>
