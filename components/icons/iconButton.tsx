@@ -17,15 +17,20 @@ interface IconProps {
 }
 
 export default function IconButton({ iconType, href }: IconProps) {
+  let ariaLabel = "social link";
+
   const icon = () => {
     switch (iconType) {
       case IconType.github: {
+        ariaLabel = "github link";
         return <GithubIcon />;
       }
       case IconType.twitter: {
+        ariaLabel = "twitter link";
         return <TwitterIcon />;
       }
       case IconType.linkedin: {
+        ariaLabel = "linkedin link";
         return <LinkedinIcon />;
       }
     }
@@ -35,6 +40,7 @@ export default function IconButton({ iconType, href }: IconProps) {
     <a
       href={href}
       target="_blank"
+      aria-label={ariaLabel}
       rel="noopener noreferrer"
       class={tw`z-[1] cursor-pointer hover:text-pink-500 mx-1`}
     >

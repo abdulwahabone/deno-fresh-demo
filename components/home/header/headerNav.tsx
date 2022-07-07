@@ -14,7 +14,9 @@ export default function HeaderNav() {
       >
         <a href="/">
           <img
+            alt="logo"
             width="150px"
+            height="150px"
             class={tw` z-[1]`}
             src={asset("/wahab.svg")}
           />

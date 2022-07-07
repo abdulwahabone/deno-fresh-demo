@@ -12,7 +12,9 @@ export default function Footer() {
           `mx-auto flex flex-col text-white justify-center items-center font-sans py-[100px]`}
       >
         <img
+          alt="logo"
           width="150px"
+          height="150px"
           class={tw` z-[1]`}
           src={asset("/wahab.svg")}
         />

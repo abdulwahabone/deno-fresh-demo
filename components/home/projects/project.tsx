@@ -12,11 +12,19 @@ const defaultProps: projectProps = {
 };
 
 const Project = ({ invert }: projectProps) => {
-  const invertClass = invert ? "md:flex-row-reverse flex-col-reverse" : "flex-col-reverse";
+  const invertClass = invert
+    ? "md:flex-row-reverse flex-col-reverse"
+    : "flex-col-reverse";
 
   return (
-    <div class={tw`flex md:flex-row flex-col mx-auto ${invertClass} max-w-[1200px] pt-[100px] pb-[50px]`}>
-      <div class={tw`flex flex-col justify-center md:w-1/2 mt-[50px] mx-[20px] md:mx-auto md:mt-auto`}>
+    <div
+      class={tw
+        `flex md:flex-row flex-col mx-auto ${invertClass} max-w-[1200px] pt-[100px] pb-[50px]`}
+    >
+      <div
+        class={tw
+          `flex flex-col justify-center md:w-1/2 mt-[50px] mx-[20px] md:mx-auto md:mt-auto`}
+      >
         <span
           class={tw
             `text-pink-500 font-sans font-normal uppercase text-[16px] mb-2.5`}
@@ -37,11 +45,23 @@ const Project = ({ invert }: projectProps) => {
           faucibus volutpat.
         </p>
       </div>
-      <div class={tw`flex flex-col justify-center items-center mx-5 md:mx-auto md:w-1/2`}>
+      <div
+        class={tw
+          `flex flex-col justify-center items-center mx-5 md:mx-auto md:w-1/2`}
+      >
         <img
+          alt="project image"
           width="400px"
-          class={tw`rounded-2xl`}
+          height="300px"
+          class={tw`rounded-2xl hidden md:block`}
           src={asset("/projectA.jpeg")}
+        />
+        <img
+          alt="project image"
+          width="320px"
+          height="240px"
+          class={tw`rounded-2xl block md:hidden`}
+          src={asset("/projectAsmall.jpeg")}
         />
       </div>
     </div>

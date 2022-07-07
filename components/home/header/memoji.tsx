@@ -7,6 +7,7 @@ export default function Memoji() {
   return (
     <div class={tw`flex flex-col mx-auto w-[250px]`}>
       <img
+        alt="Abdul Wahab"
         width="250px"
         height="250px"
         class={tw` z-[1]`}

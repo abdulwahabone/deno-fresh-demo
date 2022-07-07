@@ -48,6 +48,7 @@ export default function Memes({ data }: PageProps<Meme | null>) {
           {data?.title}
         </p>
         <img
+          alt="meme"
           class={tw`mx-auto mb-[100px]`}
           src={data?.url}
         />
