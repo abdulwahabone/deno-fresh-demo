@@ -5,7 +5,7 @@ import DarkSection from "../../darkSection.tsx";
 import HeaderNav from "./headerNav.tsx";
 import Memoji from "./memoji.tsx";
 
-const h1 = apply`font-sans mt-[50px] text-white max-w-[875px] tracking-tight
+const h1 = apply`font-sans font-bold mt-[50px] text-white max-w-[875px] tracking-tight
   lg:text-[92px] text-6xl leading-[1.1] text-center`;
 
 export default function HomeHeader() {

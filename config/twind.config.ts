@@ -20,7 +20,7 @@ export const config: Configuration = {
   },
   preflight: {
     "@import":
-      `url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@700&display=swap');`,
+      `url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;700&display=swap')`,
   },
 };
 if (IS_BROWSER) setup(config);

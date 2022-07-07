@@ -2,7 +2,7 @@
 import { h } from "preact";
 import { apply, tw } from "@twind";
 import HomeHeader from "../components/home/header/homeHeader.tsx";
-
+import Project from "../components/home/projects/project.tsx";
 
 const h1 = apply
   `font-sans mt-[50px] mb-[200px] text-white max-w-[875px] tracking-tight
@@ -11,8 +11,16 @@ const h1 = apply
 export default function Home() {
   return (
     <div>
-     <HomeHeader />
-     <div class={tw`h-screen`}></div>
+      <HomeHeader />
+      <Project />
+      <Project invert />
+      <Project />
+      <Project invert />
+      <Project />
+      <Project invert />
+      <Project />
+      <Project invert />
+      <div class={tw`h-screen`}></div>
     </div>
   );
 }
