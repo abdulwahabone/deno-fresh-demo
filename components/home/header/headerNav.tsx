@@ -22,7 +22,7 @@ export default function HeaderNav() {
         <nav class={tw`flex`}>
           <NavLinks href="/about">About</NavLinks>
           <NavLinks href="/projects">Projects</NavLinks>
-          <NavLinks href="/blogs">Blogs</NavLinks>
+          <NavLinks href="/jokes">Jokes</NavLinks>
           <NavLinks href="/javascript">Javascript</NavLinks>
         </nav>
         <div class={tw`-mt-4 flex`}>
