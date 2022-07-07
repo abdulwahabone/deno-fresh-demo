@@ -7,22 +7,24 @@ import IconButton, { IconType } from "../../icons/iconButton.tsx";
 
 export default function HeaderNav() {
   return (
-    <header class={tw`bg-black w-full max-h-[120px]`}>
+    <header class={tw`bg-black w-full max-h-[130px]`}>
       <div
         class={tw
           `mx-auto flex text-white justify-between items-center font-sans py-6 max-w-[900px]`}
       >
-        <img
-          width="150px"
-          class={tw` z-[1]`}
-          src={asset("/wahab.svg")}
-        />
-        <div class={tw`flex`}>
-          <NavLinks>About</NavLinks>
-          <NavLinks>Projects</NavLinks>
-          <NavLinks>Blogs</NavLinks>
-          <NavLinks>Testimonials</NavLinks>
-        </div>
+        <a href="/">
+          <img
+            width="150px"
+            class={tw` z-[1]`}
+            src={asset("/wahab.svg")}
+          />
+        </a>
+        <nav class={tw`flex`}>
+          <NavLinks href="/about">About</NavLinks>
+          <NavLinks href="/projects">Projects</NavLinks>
+          <NavLinks href="/blogs">Blogs</NavLinks>
+          <NavLinks href="/js">Javascript</NavLinks>
+        </nav>
         <div class={tw`-mt-4 flex`}>
           <IconButton
             iconType={IconType.github}
