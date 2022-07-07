@@ -23,7 +23,7 @@ export default function HeaderNav() {
           <NavLinks href="/about">About</NavLinks>
           <NavLinks href="/projects">Projects</NavLinks>
           <NavLinks href="/blogs">Blogs</NavLinks>
-          <NavLinks href="/js">Javascript</NavLinks>
+          <NavLinks href="/javascript">Javascript</NavLinks>
         </nav>
         <div class={tw`-mt-4 flex`}>
           <IconButton
