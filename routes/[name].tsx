@@ -22,7 +22,7 @@ export default function DynamicPage(props: PageProps) {
             <span>This is</span>
             <span class={tw`text-pink-500`}>&nbsp;{props.params.name}</span>
             <span>&nbsp;Page.</span>
-            <span><br />Its dynamic</span>
+            <span><br />Its dynamic route</span>
           </h1>
         </div>
       </DarkSection>
