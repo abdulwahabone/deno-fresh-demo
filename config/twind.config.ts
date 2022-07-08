@@ -19,8 +19,38 @@ export const config: Configuration = {
     },
   },
   preflight: {
-    "@import":
-      `url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;700&display=swap')`,
+    "@font-face": [
+      {
+        fontFamily: "Spline Sans",
+        fontWeight: "300",
+        fontDisplay: "swap",
+        src: [
+          "url('/fonts/spline-sans-v7-latin-300.woff2') format('woff2')",
+          "url('/fonts/spline-sans-v7-latin-300.woff') format('woff')",
+          "url('/fonts/spline-sans-v7-latin-300.ttf') format('truetype')",
+        ],
+      },
+      {
+        fontFamily: "Spline Sans",
+        fontWeight: "400",
+        fontDisplay: "swap",
+        src: [
+          "url('/fonts/spline-sans-v7-latin-regular.woff2') format('woff2')",
+          "url('/fonts/spline-sans-v7-latin-regular.woff') format('woff')",
+          "url('/fonts/spline-sans-v7-latin-regular.ttf') format('truetype')",
+        ],
+      },
+      {
+        fontFamily: "Spline Sans",
+        fontWeight: "700",
+        fontDisplay: "swap",
+        src: [
+          "url('/fonts/spline-sans-v7-latin-700.woff2') format('woff2')",
+          "url('/fonts/spline-sans-v7-latin-700.woff') format('woff')",
+          "url('/fonts/spline-sans-v7-latin-700.ttf') format('truetype')",
+        ],
+      },
+    ],
   },
 };
 if (IS_BROWSER) setup(config);
